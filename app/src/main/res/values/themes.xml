@@ -1,0 +1,19 @@
+<!--<resources xmlns:tools="http://schemas.android.com/tools">-->
+<!--    &lt;!&ndash; Base application theme. &ndash;&gt;-->
+<!--    <style name="Base.Theme.ColorApp" parent="Theme.Material3.DayNight.NoActionBar">-->
+<!--        &lt;!&ndash; Customize your light theme here. &ndash;&gt;-->
+<!--        &lt;!&ndash; <item name="colorPrimary">@color/my_light_primary</item> &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/colorPrimary</item>-->
+<!--    </style>-->
+
+<!--    <style name="Theme.ColorApp" parent="Base.Theme.ColorApp" />-->
+<!--</resources>-->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!-- Base application theme. -->
+<style name="Base.Theme.ColorApp" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your light theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+</style>
+<style name="Theme.ColorApp" parent="Base.Theme.ColorApp" />
+</resources>
