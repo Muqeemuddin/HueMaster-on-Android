@@ -10,7 +10,7 @@
         android:id="@+id/colorOne"
         android:layout_width="168dp"
         android:layout_height="62dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/color_hint"
         android:importantForAutofill="no"
@@ -24,12 +24,12 @@
         android:id="@+id/colorTwo"
         android:layout_width="168dp"
         android:layout_height="62dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="35dp"
         android:ems="10"
-        android:inputType="numberSigned"
-        android:textAlignment="center"
         android:hint="@string/color_hint"
         android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/colorOne"
         app:layout_constraintStart_toStartOf="@+id/colorOne"
         app:layout_constraintTop_toBottomOf="@+id/colorOne" />
@@ -38,12 +38,12 @@
         android:id="@+id/colorThree"
         android:layout_width="168dp"
         android:layout_height="62dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="35dp"
         android:ems="10"
-        android:inputType="numberSigned"
-        android:textAlignment="center"
         android:hint="@string/color_hint"
         android:importantForAutofill="no"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/colorTwo"
         app:layout_constraintStart_toStartOf="@+id/colorTwo"
         app:layout_constraintTop_toBottomOf="@+id/colorTwo" />
@@ -52,11 +52,11 @@
         android:id="@+id/generateButton"
         android:layout_width="257dp"
         android:layout_height="80dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/colorPrimary"
         android:onClick="generateColor"
         android:text="@string/generate_button"
         android:textColor="@color/white"
-        android:backgroundTint="@color/colorPrimary"
 
         app:layout_constraintEnd_toEndOf="@+id/colorThree"
         app:layout_constraintStart_toStartOf="@+id/colorThree"
@@ -66,23 +66,50 @@
         android:id="@+id/outputColor"
         android:layout_width="356dp"
         android:layout_height="139dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="15dp"
         android:text="@string/output_color"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/generateButton"
+        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="@+id/generateButton"
-        app:layout_constraintTop_toBottomOf="@+id/generateButton" />
+        app:layout_constraintTop_toBottomOf="@+id/outputText" />
 
     <TextView
         android:id="@+id/displayText"
         android:layout_width="355dp"
         android:layout_height="57dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:text="@string/display_text"
         android:textAlignment="center"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/colorOne"
         app:layout_constraintStart_toStartOf="@+id/colorOne"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="343dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/output_text"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/generateButton"
+        app:layout_constraintStart_toStartOf="@+id/generateButton"
+        app:layout_constraintTop_toBottomOf="@+id/generateButton" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="349dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/developer"
+        android:textColor="@color/gray"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/outputColor"
+        app:layout_constraintStart_toStartOf="@+id/outputColor"
+        app:layout_constraintTop_toBottomOf="@+id/outputColor"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

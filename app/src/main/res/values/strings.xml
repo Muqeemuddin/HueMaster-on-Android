@@ -4,4 +4,6 @@
     <string name="generate_button">Generate Color</string>
     <string name="output_color">Generated Color Appears Here.</string>
     <string name="color_hint">e.g. 255</string>
+    <string name="output_text">Generated Color Appears Below.</string>
+    <string name="developer">Developed By Muqeemuddin Mohammed</string>
 </resources>
